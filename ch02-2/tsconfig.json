@@ -1,0 +1,25 @@
+{
+  // tsc 명령 형식에서의 옵션
+  "compilerOptions": {
+    // 타입스크립트 소스코드가 컴파일 되어 만들어진 코드는 웹 브라우저와 nodejs 모두 동작해야 하는데 웹 브라우저와 nodejs는 다르게 동작한다
+    "module": "commonjs", // module은 동작 대상이 웹 브라우저인지 nodejs인지 구분한다. (웹 = amd, node = commonjs)
+    "moduleResolution": "node", // module이 commonjs이면 node || modele이 amd 이면 classic
+    "target": "es5", // js 버전 설정
+    "baseUrl": ".", // js 파일을 저장하는 디렉터리 설정 (현재 디렉터리 이기 때문에 .)
+    "outDir": "dist", // baseUrl 설정값 기준으로 하위 이렉터리 이름, 빌드된 결과가 dist 디렉터리에 만들어 진다.
+    "paths": { // import 문에서 from 부분을 해석할 때 찾아야 하는 디렉터리
+      "*": [
+        "node_modules/*"
+      ]
+    },
+    "esModuleInterop": true, // chance 패키지가 동작하려면 true
+    "sourceMap": true, // js 파일 이외에 js.map 파일이 만들어진다.
+    "downlevelIteration": true, // 생성기 구문이 동작하려면 true
+    "noImplicitAny": false, // 타입을 지정하지 않더라도 문제로 인식하지 않는다.
+
+  },
+  // compilerOptions의 대상 파일 목록
+  "include": [
+    "src/**/*"
+  ]
+}
