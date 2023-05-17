@@ -13,6 +13,8 @@ console.log(country)
 console.log(city)
 console.log(detail)
 
+///////////////////////////////////////////////////////
+
 // 전개 연산자
 // @ts-ignore
 let name = {name: 'Jack'}

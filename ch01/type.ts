@@ -1,4 +1,4 @@
-let random: any = '램덤'
+let random:any = '램덤'
 
 random = 100
 random = true
@@ -71,12 +71,13 @@ console.log(Os3.Window) // win
 
 ///////////////////////////////////////////////////////
 
-let person: object = {name: 'Jack', age: 32};
+let person:object = {name: 'Jack', age: 32};
 //person.name
 console.log((<{name: string}>person).name) // Jack
 
 ///////////////////////////////////////////////////////
 
+// 타입 단언 <> as
 export default interface INameable {
   name: string
 }

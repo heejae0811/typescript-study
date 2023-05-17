@@ -4,6 +4,8 @@ let userName2 = 'leeheejae'
 userName1 = 1
 userName2 = 1
 
+/////////////////////////////////////////////////
+
 type Job = "teacher" | "student"
 
 interface User {
@@ -16,20 +18,22 @@ interface HighSchool {
   grade: 1 | 2 | 3
 }
 
-const user: User = {
-  name: 'heejae',
+const user:User = {
+  name: 'HeeJae',
   job: 'teacher' // teacher 또는 student만 가능
 }
 
-const highSchoolStudent1: HighSchool = {
-  name: 'heejae',
+const highSchoolStudent1:HighSchool = {
+  name: 'HeeJae',
   grade: 1
 }
 
-const highSchoolStudent2: HighSchool = {
+const highSchoolStudent2:HighSchool = {
   name: 123,
   grade: 100
 }
+
+/////////////////////////////////////////////////
 
 interface Pc {
   name: 'Pc'

@@ -22,6 +22,8 @@ let naver:ICompany = {
 console.log(jack)
 console.log(naver)
 
+///////////////////////////////////////////////////////
+
 // 비구조화
 let jack_name = jack.name
 let jack_age = jack.age
