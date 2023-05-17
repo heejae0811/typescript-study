@@ -1,6 +1,16 @@
+let random: any = '램덤'
+
+random = 100
+random = true
+random = null
+random = undefined
+random = [1, 2, 3]
+
 let car:string = 'bmw'
 
 let age:number = 29
+age =  30
+//age = '삼십'
 
 let isAdult:boolean = true
 
@@ -58,3 +68,24 @@ enum Os3 {
 console.log(Os1) // Window: 0, Ios: 1, Android: 2
 console.log(Os2[5]) // Window
 console.log(Os3.Window) // win
+
+///////////////////////////////////////////////////////
+
+let person: object = {name: 'Jack', age: 32};
+//person.name
+console.log((<{name: string}>person).name) // Jack
+
+///////////////////////////////////////////////////////
+
+export default interface INameable {
+  name: string
+}
+
+let obj:object = {name: 'Jack'}
+
+let name1 = (<INameable>obj).name
+let name2 = (obj as INameable).name
+
+console.log(typeof obj, obj) // object { name: 'Jack' }
+console.log(typeof name1, name1) // string Jack
+console.log(typeof name2, name2) // string Jack
